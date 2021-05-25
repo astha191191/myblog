@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" style="width: 30%;" id="family_member_image">
+            <h4 id="family_member_name"></h4>
+            <button id=" next" onclick="update();">Next</button>
+        </center>
+    </body>
+    <script>
+                    var images = ["https://i.postimg.cc/MKdhy06Z/family.jpg",                           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNHr0cwUbWy3kHsbW-doVWfU2xffAUnuIDQ&usqp=CAU",            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWs7yu888M7vQ4PcaTHfScLKhNRaFPAElvg&usqp=CAU",                    "https://i.pinimg.com/originals/e5/66/1b/e5661b0c9bda219a7bf977c457b74535.jpg",                          "https://thumbs.dreamstime.com/z/beautiful-pregnant-young-woman-belly-shapes-silhouette-sketch-illustration-portrait-beautiful-family-mother-father-cute-little-173512837.jpg", "https://image.shutterstock.com/image-vector/portrait-handsome-man-shirt-jeans-260nw-582282625.jpg",
+                          "https://i.pinimg.com/564x/aa/14/39/aa1439c78e8084cc34d2f3efd72fe77a.jpg"]; 
+var names = ["My Family Book","My Dad and mom", "My in-law's", "My brother-in-law and his family", "My sister and his family", "My Brother", "Me and my husband"];
+ var i = 0;
+ function update()
+{
+                i++;
+var numbers_of_family_member= 6;
+if(i > numbers_of_family_member){
+ i = 0; }
+  var updatedImage = images[i];
+                var updatedName  = names[i];
+                document.getElementById("family_member_image").src = updatedImage;
+                document.getElementById("family_member_name").innerHTML = updatedName;
+            }
+</script>
+</html>
